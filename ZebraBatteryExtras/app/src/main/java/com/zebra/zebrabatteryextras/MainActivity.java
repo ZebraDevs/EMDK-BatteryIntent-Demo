@@ -156,9 +156,12 @@ public class MainActivity extends AppCompatActivity {
             if (cumulativeCharge > -1)
                 cumulativeChargeTxt = "" + cumulativeCharge + "mAh";
             int numberChargeCycles = batteryStatus.getIntExtra("battery_usage_numb", -1);
+            int cycle = batteryStatus.getExtras().getInt("cycle", -1);
             String numberChargeCyclesTxt = "unknown";
             if (numberChargeCycles > -1)
                 numberChargeCyclesTxt = "" + numberChargeCycles;
+            else if (cycle > -1)
+                numberChargeCyclesTxt = "" + cycle;
             int cumulativeChargeAll = batteryStatus.getIntExtra("total_cumulative_charge", -1);
             String cumulativeChargeAllTxt = "unknown";
             if (cumulativeChargeAll > -1)
