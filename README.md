@@ -1,4 +1,4 @@
-# Zebra Battery Extras
+# EMDK BatteryIntent Demo (formally ZebraBatteryExtras)
 
 This application demonstrates the extra battery information which can be obtained on Zebra Android Mobile Devices
 
